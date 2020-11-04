@@ -1,0 +1,103 @@
+- text: varで定義されるのは
+  choice:
+    - 値を変えることができる変数
+    - 値を変えることができない定数
+    - 関数
+    - プログラム
+- text: letで定義されるのは
+  choice:
+    - 値を変えることができない定数
+    - 値を変えることができる変数
+    - 関数
+    - プログラム
+- text: 値を変えられる変数を定義するときに使うキーワードは
+  choice:
+    - var
+    - let
+    - func
+    - return
+- text: 関数から値を返すために使うキーワードは
+  choice:
+    - return
+    - func
+    - var
+    - if
+- text: 整数を表す型は
+  choice:
+    - Int
+    - int
+    - x
+    - integer
+- text: 文字列を表す型は
+  choice:
+    - String
+    - s
+    - string
+    - '[s]'
+- text: オブジェクトを生成するには
+  choice:
+    - 型名(引数)
+    - 型名[引数]
+    - 型名{引数}
+    - 型名 引数
+- text: 仲間外れはどれ
+  choice:
+    - var
+    - Int
+    - "[String]"
+    - Bool
+- text: 複数の値をまとめるXXX。XXXとは
+  choice:
+    - タプル
+    - 変数
+    - 引数
+    - 型
+- text: 「Stringのリスト」型はどれ
+  choice:
+    - "[[String]]"
+    - String[[]]
+    - String[][]
+    - String([], [])
+- text: "Intのリスト(例えばx)にIntを追加する append(_ newElement: Int)の正しい使い方の例は"
+  choice:
+    - "x.append(3)"
+    - "x.append(_ newElement: 3)"
+    - "x.append(newElement: 3)"
+    - "x.append(_ newElement: Int 3)"
+- text: "自分で定義した関数 f1(arg: Int)の正しい使い方の例は"
+  choice:
+    - "f1(arg: 2)"
+    - "f1(_ arg: 2)"
+    - "f1(2)"
+    - "f1(arg: Int)"
+- text: "自分で定義した関数 f2(x arg: String)の正しい使い方の例は"
+  choice:
+    - "f2(x: \"東京\")"
+    - "f2(x \"東京\")"
+    - "f2(\"東京\")"
+    - "f2(x arg: \"東京\")"
+    - "f2(arg: \"東京\")"
+- text: "func f(A B: C) においてAは"
+  choice:
+    - 外部引数名
+    - 外部変数名
+    - 内部引数名
+    - 型
+- text: "func f(A B: C) においてAは"
+  choice:
+    - 引数ラベル
+    - 関数ラベル
+    - 変数ラベル
+    - 型ラベル
+- text: 関数を定義するときのキーワードは
+  choice:
+    - func
+    - struct
+    - let
+    - return
+- text: "func f(A B: C) においてBは"
+  choice:
+    - 内部引数名
+    - 外部引数名
+    - 外部変数名
+    - 関数名
