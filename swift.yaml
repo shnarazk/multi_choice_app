@@ -64,25 +64,39 @@
     - "x.append(_ newElement: 3)"
     - "x.append(newElement: 3)"
     - "x.append(_ newElement: Int 3)"
-- text: "自分で定義した関数 f1(arg: Int)の正しい使い方の例は"
+- text: "自分で定義した関数 f1(arg: Int)の正しい実行例は"
   choice:
     - "f1(arg: 2)"
     - "f1(_ arg: 2)"
     - "f1(2)"
     - "f1(arg: Int)"
-- text: "自分で定義した関数 f2(x arg: String)の正しい使い方の例は"
+- text: "自分で定義した関数 f1(of arg: Int)の正しい実行例は"
   choice:
-    - "f2(x: \"東京\")"
-    - "f2(x \"東京\")"
-    - "f2(\"東京\")"
-    - "f2(x arg: \"東京\")"
-    - "f2(arg: \"東京\")"
+    - "f1(of: 2)"
+    - "f1(arg: 2)"
+    - "f1(of arg: 2)"
+    - "f1(of 2)"
+    - "f1(of arg 2)"
+    - "f1(2)"
+- text: "f1(by: true)という関数の呼び出しを見ることでわかる、正しい理解は"
+  choice:
+    - byというのが外部引数名か内部引数名か、どちらなのかはこれだけではわからない
+    - 引数は2個必要である
+    - trueのところをfalseに変えると構文エラーになる
+    - byはtrue型である
+- text: "自分で定義した関数 f(x arg: String)の正しい使い方の例は"
+  choice:
+    - "f(x: \"東京\")"
+    - "f(x \"東京\")"
+    - "f(\"東京\")"
+    - "f(x arg: \"東京\")"
+    - "f(arg: \"東京\")"
 - text: "func f(A B: C) においてAは"
   choice:
-    - 外部引数名
-    - 外部変数名
-    - 内部引数名
-    - 型
+    - 外部引数名に対応する
+    - 外部変数名に対応する
+    - 内部引数名に対応する
+    - 型名に対応する
 - text: "func f(A B: C) においてAは"
   choice:
     - 引数ラベル
@@ -101,3 +115,28 @@
     - 外部引数名
     - 外部変数名
     - 関数名
+- text: Int型の変数xとDouble型の変数yをエラーなく足すには
+  choice:
+    - Double(x) + y
+    - x + Double(y)
+    - x + y
+    - Double(x + y)
+- text: print("40" + "8")の結果は
+  choice:
+    - 408が出力される
+    - 48が出力される
+    - エラーなので実行できない
+    - 40が出力され、（次の行に）8が出力される
+- text: "変数xが[9, 8, 25]だとする。x.remove(at: 1)の実行結果は"
+  choice:
+    - xは[9, 25]になる
+    - xは[9, 0, 25]になる
+    - xは[1, 8, 25]になる    
+    - xは[8, 25]になる
+    - xは[9, 1, 25]になる
+- text: var x = 88　だとするとxの型は
+  choice:
+    - Int型
+    - Double型
+    - IntかDoubleだが決まってないのでエラー
+    - IntかDoubleかまだ決まってないがエラーではない
