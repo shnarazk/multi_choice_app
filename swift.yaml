@@ -165,3 +165,29 @@
     - "list[]"
     - "list"
     - "[list]"
+- text: 式展開で文字列(String)中に値を埋め込むのに使うのはどれ
+  choice:
+    - バックスラッシュ(\\)
+    - スラッシュ(/)
+    - ドル記号($)
+    - バッククオート(')
+- text: 20 % 3 の計算結果は
+  choice:
+    - 2
+    - 6
+    - 7
+    - 6.6666...
+    - エラーなのでそもそも計算できない
+- text: リスト型の変数xから先頭要素を関数removeFirst()で除きたい。正しいのはどれ
+  choice:
+    - x.removeFirst()
+    - removeFirst(x)
+    - x.removeFirst
+    - removeFirst(x[0])
+- text: エラーにならないのはどれ
+  choice:
+    - "@State var x: Int"
+    - "?State var x: Int"
+    - "State@ var x: Int"
+    - "State var x: Int"
+    - "State(var x: Int)"
