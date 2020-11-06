@@ -52,7 +52,7 @@
     - 変数
     - 引数
     - 型
-- text: 「Stringのリスト」型はどれ
+- text: 「Stringのリストのリスト」型はどれ
   choice:
     - "[[String]]"
     - String[[]]
@@ -115,6 +115,12 @@
     - 外部引数名
     - 外部変数名
     - 関数名
+- text: "func f(A B: C) においてCは"
+  choice:
+    - 型名
+    - 内部引数名
+    - 引数ラベル
+    - 外部変数名
 - text: Int型の変数xとDouble型の変数yをエラーなく足すには
   choice:
     - Double(x) + y
@@ -140,3 +146,22 @@
     - Double型
     - IntかDoubleだが決まってないのでエラー
     - IntかDoubleかまだ決まってないがエラーではない
+- text: var x = 165.0 とする。これは身長（センチ）を表す変数である。正しく出力するのは
+  choice:
+    - print("身長は \(x / 100.0) メートルです")
+    - print("身長は \(x * 100.0) メートルです")
+    - print("身長は \(x) メートルです")
+    - print("身長は \(x / 100) メートルです")
+    - print("身長は \(x * 100) メートルです")
+- text: エラーにならないのはどれ
+  choice:
+    - "var 日本語: Int"
+    - "var \"xy3\": Int"
+    - "var 3xy: Int"
+    - "var x3y[]: Int"
+- text: list[4] と同じ型になるものはどれ（listの詳細に関する説明はない）
+  choice:
+    - "list[3]"
+    - "list[]"
+    - "list"
+    - "[list]"
