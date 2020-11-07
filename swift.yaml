@@ -191,3 +191,52 @@
     - "State@ var x: Int"
     - "State var x: Int"
     - "State(var x: Int)"
+- text: 関数を定義するときに使うキーワードは
+  choice:
+    - func
+    - function
+    - f
+    - fn
+- text: if A { B } else { C }と同じなのは
+  choice:
+    - "A ? B : C"
+    - "A : B ? C"
+    - "A"
+    - "if A else { C } { B }"
+- text: 変数xを、Intのリスト型で、最初は中身は空として定義するのは
+  choice:
+    - "var x: [Int] = []"
+    - "var x: Int = []"
+    - "var x = []"
+    - "var x = 0"
+    - "var x: [Int]"
+- text: リテラルを選べ
+  choice:
+    - 10
+    - x
+    - 2 + 8
+    - 0 * x
+- text: リテラルを選べ
+  choice:
+    - "ab"
+    - ab
+    - a.b
+    - 3.1
+- text: "x = a.b(c: 3) がエラーでないとする。正しいものは"
+  choice:
+    - bはメソッド
+    - aは関数
+    - bは関数
+    - aはメソッド
+- text: "x = a.b(c: 3) がエラーでないとする。正しいものは"
+  choice:
+    - 3は引数（パラメータ）
+    - cは引数（パラメータ）
+    - bは引数（パラメータ）
+    - aは引数（パラメータ）
+- text: 型を自動認識するXXX。XXXとは
+  choice:
+    - 型推論
+    - 型認識
+    - 型計算
+    - 計算型
