@@ -52,7 +52,7 @@
     - 変数
     - 引数
     - 型
-- text: 「Stringのリストのリスト」型はどれ
+- text: 「Stringのリストのリスト」型になるのは
   choice:
     - "[[String]]"
     - String[[]]
@@ -78,7 +78,7 @@
     - "f1(of 2)"
     - "f1(of arg 2)"
     - "f1(2)"
-- text: "f1(by: true)という関数の呼び出しを見ることでわかる、正しい理解は"
+- text: "f1(by: true)がエラーでないとする。正しい理解は"
   choice:
     - byというのが外部引数名か内部引数名か、どちらなのかはこれだけではわからない
     - 引数は2個必要である
@@ -159,13 +159,13 @@
     - "var \"xy3\": Int"
     - "var 3xy: Int"
     - "var x3y[]: Int"
-- text: list[4] と同じ型になるものはどれ（listの詳細に関する説明はない）
+- text: list[4] と同じ型になるものは（listの詳細に関する説明はない）
   choice:
     - "list[3]"
     - "list[]"
     - "list"
     - "[list]"
-- text: 式展開で文字列(String)中に値を埋め込むのに使うのはどれ
+- text: 式展開で文字列(String)中に値を埋め込むのに使うのは
   choice:
     - バックスラッシュ(\\)
     - スラッシュ(/)
@@ -178,13 +178,13 @@
     - 7
     - 6.6666...
     - エラーなのでそもそも計算できない
-- text: リスト型の変数xから先頭要素を関数removeFirst()で除きたい。正しいのはどれ
+- text: リスト型の変数xから先頭要素を関数removeFirst()で除きたい。正しいのは
   choice:
     - x.removeFirst()
     - removeFirst(x)
     - x.removeFirst
     - removeFirst(x[0])
-- text: エラーにならないのはどれ
+- text: エラーにならないのは
   choice:
     - "@State var x: Int"
     - "?State var x: Int"
