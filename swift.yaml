@@ -97,7 +97,7 @@
     - 外部変数名に対応する
     - 内部引数名に対応する
     - 型名に対応する
-- text: "func f(A B: C) においてAは"
+- text: "関数定義 func f(A B: C) においてAは"
   choice:
     - 引数ラベル
     - 関数ラベル
@@ -109,13 +109,13 @@
     - struct
     - let
     - return
-- text: "func f(A B: C) においてBは"
+- text: "関数定義 func f(A B: C) においてBは"
   choice:
     - 内部引数名
     - 外部引数名
     - 外部変数名
     - 関数名
-- text: "func f(A B: C) においてCは"
+- text: "関数定義 func f(A B: C) においてCは"
   choice:
     - 型名
     - 内部引数名
@@ -144,8 +144,8 @@
   choice:
     - Int型
     - Double型
-    - IntかDoubleだが決まってないのでエラー
-    - IntかDoubleかまだ決まってないがエラーではない
+    - Int型かDouble型か決められないのでエラー
+    - Int型かDouble型かまだ決まってないがエラーではない
 - text: var x = 165.0 とする。これは身長（センチ）を表す変数である。正しく出力するのは
   choice:
     - print("身長は \(x / 100.0) メートルです")
