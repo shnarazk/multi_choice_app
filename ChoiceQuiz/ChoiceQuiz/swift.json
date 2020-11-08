@@ -1,1 +1,242 @@
-[{"id":0,"text":"varで定義されるのは","choice":["⭕️値を変えることができる変数","❌値を変えることができない定数","❌関数","❌プログラム"]},{"id":1,"text":"letで定義されるのは","choice":["⭕️値を変えることができない定数","❌値を変えることができる変数","❌関数","❌プログラム"]},{"id":2,"text":"値を変えられる変数を定義するときに使うキーワードは","choice":["⭕️var","❌let","❌func","❌return"]},{"id":3,"text":"関数から値を返すために使うキーワードは","choice":["⭕️return","❌func","❌var","❌if"]},{"id":4,"text":"整数を表す型は","choice":["⭕️Int","❌int","❌x","❌integer"]},{"id":5,"text":"文字列を表す型は","choice":["⭕️String","❌s","❌string","❌[s]"]},{"id":6,"text":"オブジェクトを生成するには","choice":["⭕️型名(引数)","❌型名[引数]","❌型名{引数}","❌型名 引数"]},{"id":7,"text":"仲間外れはどれ","choice":["⭕️var","❌Int","❌[String]","❌Bool"]},{"id":8,"text":"複数の値をまとめるXXX。XXXとは","choice":["⭕️タプル","❌変数","❌引数","❌型"]},{"id":9,"text":"「Stringのリスト」型はどれ","choice":["⭕️[[String]]","❌String[[]]","❌String[][]","❌String([], [])"]},{"id":10,"text":"Intのリスト(例えばx)にIntを追加する append(_ newElement: Int)の正しい使い方の例は","choice":["⭕️x.append(3)","❌x.append(_ newElement: 3)","❌x.append(newElement: 3)","❌x.append(_ newElement: Int 3)"]},{"id":11,"text":"自分で定義した関数 f1(arg: Int)の正しい実行例は","choice":["⭕️f1(arg: 2)","❌f1(_ arg: 2)","❌f1(2)","❌f1(arg: Int)"]},{"id":12,"text":"自分で定義した関数 f1(of arg: Int)の正しい実行例は","choice":["⭕️f1(of: 2)","❌f1(arg: 2)","❌f1(of arg: 2)","❌f1(of 2)","❌f1(of arg 2)","❌f1(2)"]},{"id":13,"text":"f1(by: true)という関数の呼び出しを見ることでわかる、正しい理解は","choice":["⭕️byというのが外部引数名か内部引数名か、どちらなのかはこれだけではわからない","❌引数は2個必要である","❌trueのところをfalseに変えると構文エラーになる","❌byはtrue型である"]},{"id":14,"text":"自分で定義した関数 f(x arg: String)の正しい使い方の例は","choice":["⭕️f(x: \"東京\")","❌f(x \"東京\")","❌f(\"東京\")","❌f(x arg: \"東京\")","❌f(arg: \"東京\")"]},{"id":15,"text":"func f(A B: C) においてAは","choice":["⭕️外部引数名に対応する","❌外部変数名に対応する","❌内部引数名に対応する","❌型名に対応する"]},{"id":16,"text":"func f(A B: C) においてAは","choice":["⭕️引数ラベル","❌関数ラベル","❌変数ラベル","❌型ラベル"]},{"id":17,"text":"関数を定義するときのキーワードは","choice":["⭕️func","❌struct","❌let","❌return"]},{"id":18,"text":"func f(A B: C) においてBは","choice":["⭕️内部引数名","❌外部引数名","❌外部変数名","❌関数名"]},{"id":19,"text":"Int型の変数xとDouble型の変数yをエラーなく足すには","choice":["⭕️Double(x) + y","❌x + Double(y)","❌x + y","❌Double(x + y)"]},{"id":20,"text":"print(\"40\" + \"8\")の結果は","choice":["⭕️408が出力される","❌48が出力される","❌エラーなので実行できない","❌40が出力され、（次の行に）8が出力される"]},{"id":21,"text":"変数xが[9, 8, 25]だとする。x.remove(at: 1)の実行結果は","choice":["⭕️xは[9, 25]になる","❌xは[9, 0, 25]になる","❌xは[1, 8, 25]になる","❌xは[8, 25]になる","❌xは[9, 1, 25]になる"]},{"id":22,"text":"var x = 88　だとするとxの型は","choice":["⭕️Int型","❌Double型","❌IntかDoubleだが決まってないのでエラー","❌IntかDoubleかまだ決まってないがエラーではない"]}]
+- text: varで定義されるのは
+  choice:
+    - 値を変えることができる変数
+    - 値を変えることができない定数
+    - 関数
+    - プログラム
+- text: letで定義されるのは
+  choice:
+    - 値を変えることができない定数
+    - 値を変えることができる変数
+    - 関数
+    - プログラム
+- text: 値を変えられる変数を定義するときに使うキーワードは
+  choice:
+    - var
+    - let
+    - func
+    - return
+- text: 関数から値を返すために使うキーワードは
+  choice:
+    - return
+    - func
+    - var
+    - if
+- text: 整数を表す型は
+  choice:
+    - Int
+    - int
+    - x
+    - integer
+- text: 文字列を表す型は
+  choice:
+    - String
+    - s
+    - string
+    - '[s]'
+- text: オブジェクトを生成するには
+  choice:
+    - 型名(引数)
+    - 型名[引数]
+    - 型名{引数}
+    - 型名 引数
+- text: 仲間外れはどれ
+  choice:
+    - var
+    - Int
+    - "[String]"
+    - Bool
+- text: 複数の値をまとめるXXX。XXXとは
+  choice:
+    - タプル
+    - 変数
+    - 引数
+    - 型
+- text: 「Stringのリストのリスト」型になるのは
+  choice:
+    - "[[String]]"
+    - String[[]]
+    - String[][]
+    - String([], [])
+- text: "Intのリスト(例えばx)にIntを追加する append(_ newElement: Int)の正しい使い方の例は"
+  choice:
+    - "x.append(3)"
+    - "x.append(_ newElement: 3)"
+    - "x.append(newElement: 3)"
+    - "x.append(_ newElement: Int 3)"
+- text: "自分で定義した関数 f1(arg: Int)の正しい実行例は"
+  choice:
+    - "f1(arg: 2)"
+    - "f1(_ arg: 2)"
+    - "f1(2)"
+    - "f1(arg: Int)"
+- text: "自分で定義した関数 f1(of arg: Int)の正しい実行例は"
+  choice:
+    - "f1(of: 2)"
+    - "f1(arg: 2)"
+    - "f1(of arg: 2)"
+    - "f1(of 2)"
+    - "f1(of arg 2)"
+    - "f1(2)"
+- text: "f1(by: true)がエラーでないとする。正しい理解は"
+  choice:
+    - byというのが外部引数名か内部引数名か、どちらなのかはこれだけではわからない
+    - 引数は2個必要である
+    - trueのところをfalseに変えると構文エラーになる
+    - byはtrue型である
+- text: "自分で定義した関数 f(x arg: String)の正しい使い方の例は"
+  choice:
+    - "f(x: \"東京\")"
+    - "f(x \"東京\")"
+    - "f(\"東京\")"
+    - "f(x arg: \"東京\")"
+    - "f(arg: \"東京\")"
+- text: "func f(A B: C) においてAは"
+  choice:
+    - 外部引数名に対応する
+    - 外部変数名に対応する
+    - 内部引数名に対応する
+    - 型名に対応する
+- text: "関数定義 func f(A B: C) においてAは"
+  choice:
+    - 引数ラベル
+    - 関数ラベル
+    - 変数ラベル
+    - 型ラベル
+- text: 関数を定義するときのキーワードは
+  choice:
+    - func
+    - struct
+    - let
+    - return
+- text: "関数定義 func f(A B: C) においてBは"
+  choice:
+    - 内部引数名
+    - 外部引数名
+    - 外部変数名
+    - 関数名
+- text: "関数定義 func f(A B: C) においてCは"
+  choice:
+    - 型名
+    - 内部引数名
+    - 引数ラベル
+    - 外部変数名
+- text: Int型の変数xとDouble型の変数yをエラーなく足すには
+  choice:
+    - Double(x) + y
+    - x + Double(y)
+    - x + y
+    - Double(x + y)
+- text: print("40" + "8")の結果は
+  choice:
+    - 408が出力される
+    - 48が出力される
+    - エラーなので実行できない
+    - 40が出力され、（次の行に）8が出力される
+- text: "変数xが[9, 8, 25]だとする。x.remove(at: 1)の実行結果は"
+  choice:
+    - xは[9, 25]になる
+    - xは[9, 0, 25]になる
+    - xは[1, 8, 25]になる    
+    - xは[8, 25]になる
+    - xは[9, 1, 25]になる
+- text: var x = 88　だとするとxの型は
+  choice:
+    - Int型
+    - Double型
+    - Int型かDouble型か決められないのでエラー
+    - Int型かDouble型かまだ決まってないがエラーではない
+- text: var x = 165.0 とする。これは身長（センチ）を表す変数である。正しく出力するのは
+  choice:
+    - print("身長は \(x / 100.0) メートルです")
+    - print("身長は \(x * 100.0) メートルです")
+    - print("身長は \(x) メートルです")
+    - print("身長は \(x / 100) メートルです")
+    - print("身長は \(x * 100) メートルです")
+- text: エラーにならないのはどれ
+  choice:
+    - "var 日本語: Int"
+    - "var \"xy3\": Int"
+    - "var 3xy: Int"
+    - "var x3y[]: Int"
+- text: list[4] と同じ型になるものは（listの詳細に関する説明はない）
+  choice:
+    - "list[3]"
+    - "list[]"
+    - "list"
+    - "[list]"
+- text: 式展開で文字列(String)中に値を埋め込むのに使うのは
+  choice:
+    - バックスラッシュ(\\)
+    - スラッシュ(/)
+    - ドル記号($)
+    - バッククオート(')
+- text: 20 % 3 の計算結果は
+  choice:
+    - 2
+    - 6
+    - 7
+    - 6.6666...
+    - エラーなのでそもそも計算できない
+- text: リスト型の変数xから先頭要素を関数removeFirst()で除きたい。正しいのは
+  choice:
+    - x.removeFirst()
+    - removeFirst(x)
+    - x.removeFirst
+    - removeFirst(x[0])
+- text: エラーにならないのは
+  choice:
+    - "@State var x: Int"
+    - "?State var x: Int"
+    - "State@ var x: Int"
+    - "State var x: Int"
+    - "State(var x: Int)"
+- text: 関数を定義するときに使うキーワードは
+  choice:
+    - func
+    - function
+    - f
+    - fn
+- text: if A { B } else { C }と同じなのは
+  choice:
+    - "A ? B : C"
+    - "A : B ? C"
+    - "A"
+    - "if A else { C } { B }"
+- text: 変数xを、Intのリスト型で、最初は中身は空として定義するのは
+  choice:
+    - "var x: [Int] = []"
+    - "var x: Int = []"
+    - "var x = []"
+    - "var x = 0"
+    - "var x: [Int]"
+- text: リテラルを選べ
+  choice:
+    - 10
+    - x
+    - 2 + 8
+    - 0 * x
+- text: リテラルを選べ
+  choice:
+    - "ab"
+    - ab
+    - a.b
+    - 3.1
+- text: "x = a.b(c: 3) がエラーでないとする。正しいものは"
+  choice:
+    - bはメソッド
+    - aは関数
+    - bは関数
+    - aはメソッド
+- text: "x = a.b(c: 3) がエラーでないとする。正しいものは"
+  choice:
+    - 3は引数（パラメータ）
+    - cは引数（パラメータ）
+    - bは引数（パラメータ）
+    - aは引数（パラメータ）
+- text: 型を自動認識するXXX。XXXとは
+  choice:
+    - 型推論
+    - 型認識
+    - 型計算
+    - 計算型
