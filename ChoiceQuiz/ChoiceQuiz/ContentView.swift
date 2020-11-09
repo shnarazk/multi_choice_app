@@ -17,7 +17,7 @@ struct ContentView: View {
             NavigationView {
                 List {
                     Text(quiz.text)
-                        .font(.headline)
+                        .font(.system(.headline, design: .monospaced))
                         .foregroundColor(.red)
                         .padding(.vertical, 20)
                     ForEach(quiz.choice.shuffled(), id: \.self) { c in
@@ -26,8 +26,12 @@ struct ContentView: View {
                                 ZStack {
                                     Text(c.correct() ? "⭕️" : "❌")
                                         .font(Font.system(size: 300))
-                                        .opacity(0.75)
+                                        .blur(radius: 4.0)
+                                        .opacity(0.6)
                                         .padding()
+//                                    Text(c.correct() ? "⭕️" : "❌")
+//                                        .font(Font.system(size: 300))
+//                                        .padding()
                                     Text("\(c.correct() ? corrects + 1 : 0)問連続正解")
                                         .font(.title)
                                 }
@@ -40,6 +44,7 @@ struct ContentView: View {
                                 HStack {
                                     Image(systemName: "arrow.forward.circle.fill")
                                     Text(c.dropFirst())
+                                        .font(.system(.body, design: .monospaced))
                                 }
                             }
                         )
