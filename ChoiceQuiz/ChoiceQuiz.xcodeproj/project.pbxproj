@@ -14,7 +14,7 @@
 		C61F0A7F25553C0400F8CB2F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61F0A7E25553C0400F8CB2F /* Preview Assets.xcassets */; };
 		C61F0A8225553C0400F8CB2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61F0A8025553C0400F8CB2F /* LaunchScreen.storyboard */; };
 		C61F0A8B25553C4000F8CB2F /* Quiz.swift in Sources */ = {isa = PBXBuildFile; fileRef = C61F0A8A25553C4000F8CB2F /* Quiz.swift */; };
-		C6BEDAC12557A9A9001C0460 /* swift.json in Resources */ = {isa = PBXBuildFile; fileRef = C6BEDAC02557A9A9001C0460 /* swift.json */; };
+		C6DFD0CE255CAFCB00ED50C8 /* swift.json in Resources */ = {isa = PBXBuildFile; fileRef = C6DFD0CD255CAFCB00ED50C8 /* swift.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,7 +28,7 @@
 		C61F0A8325553C0400F8CB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C61F0A8A25553C4000F8CB2F /* Quiz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quiz.swift; sourceTree = "<group>"; };
 		C61F0A9025554F3A00F8CB2F /* ChoiceQuiz.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChoiceQuiz.entitlements; sourceTree = "<group>"; };
-		C6BEDAC02557A9A9001C0460 /* swift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = swift.json; path = ../../swift.json; sourceTree = "<group>"; };
+		C6DFD0CD255CAFCB00ED50C8 /* swift.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = swift.json; path = ../../swift.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +65,8 @@
 				C61F0A7525553C0300F8CB2F /* AppDelegate.swift */,
 				C61F0A7725553C0300F8CB2F /* SceneDelegate.swift */,
 				C61F0A7925553C0300F8CB2F /* ContentView.swift */,
-				C6BEDAC02557A9A9001C0460 /* swift.json */,
 				C61F0A8A25553C4000F8CB2F /* Quiz.swift */,
+				C6DFD0CD255CAFCB00ED50C8 /* swift.json */,
 				C61F0A7B25553C0400F8CB2F /* Assets.xcassets */,
 				C61F0A8025553C0400F8CB2F /* LaunchScreen.storyboard */,
 				C61F0A8325553C0400F8CB2F /* Info.plist */,
@@ -143,7 +143,7 @@
 				C61F0A8225553C0400F8CB2F /* LaunchScreen.storyboard in Resources */,
 				C61F0A7F25553C0400F8CB2F /* Preview Assets.xcassets in Resources */,
 				C61F0A7C25553C0400F8CB2F /* Assets.xcassets in Resources */,
-				C6BEDAC12557A9A9001C0460 /* swift.json in Resources */,
+				C6DFD0CE255CAFCB00ED50C8 /* swift.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@ use {
 struct Question {
     id: Option<isize>,
     text: String,
+    code: Option<String>,
     choice: Vec<String>,
 }
 

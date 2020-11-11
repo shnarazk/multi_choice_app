@@ -40,12 +40,26 @@
     - 型名[引数]
     - 型名{引数}
     - 型名 引数
-- text: 仲間外れはどれ
+- text: 仲間外れは
   choice:
     - var
     - Int
     - "[String]"
     - Bool
+- text: 仲間外れは
+  choice:
+    - 1 + 1
+    - 2.0 * 3.0
+    - -4.0
+    - 7.0
+    - 1.1 + 1.8 * 2.0
+- text: 仲間外れは
+  choice:
+    - var
+    - let
+    - func
+    - return
+    - tensuu
 - text: 複数の値をまとめるXXX。XXXとは
   choice:
     - タプル
@@ -58,6 +72,12 @@
     - String[[]]
     - String[][]
     - String([], [])
+- text: 「Intのリストのリスト」型になるのは
+  choice:
+    - "[[3], [4, 8]]"
+    - "[[10], [1, 11], [0.1]]"
+    - "[0, 1, 0, 1]"
+    - "[0, 1], [0, 1]"
 - text: "Intのリスト(例えばx)にIntを追加する append(_ newElement: Int)の正しい使い方の例は"
   choice:
     - "x.append(3)"
@@ -91,6 +111,21 @@
     - "f(\"東京\")"
     - "f(x arg: \"東京\")"
     - "f(arg: \"東京\")"
+- text: "自分で定義した関数 f(arg: String)の正しい使い方の例は"
+  choice:
+    - "f(arg: \"東京\")"
+    - "f(arg \"東京\")"
+    - "f(arg String: \"東京\")"
+    - "f(\"東京\")"
+    - "f()"
+    - "f(String)"
+- text: "自分で定義した関数 f(arg: [Bool])の正しい実行例は"
+  choice:
+    - "f(arg: Bool)"
+    - "f(arg: [Bool])"
+    - "f(arg: true)"
+    - "f(arg: [])"
+    - "f([false, true])"
 - text: "func f(A B: C) においてAは"
   choice:
     - 外部引数名に対応する
@@ -153,7 +188,7 @@
     - print("身長は \(x) メートルです")
     - print("身長は \(x / 100) メートルです")
     - print("身長は \(x * 100) メートルです")
-- text: エラーにならないのはどれ
+- text: エラーにならないのは
   choice:
     - "var 日本語: Int"
     - "var \"xy3\": Int"
@@ -234,12 +269,117 @@
     - aは関数
     - bは関数
     - aはメソッド
-- text: "x = a.b(c: 3) がエラーでないとする。もっとも正しいものは"
+- text: 以下のプログラムがエラーでないとする。もっとも正しいものは
+  code: |
+    x = y
+    x = a.b(c: 3)
+
   choice:
-    - xはvarで定義されている
+    - xはvarを使って定義されている
     - xはInt型である
-    - xはletで定義されている
+    - aはfuncを使って定義されている
     - xもaもInt型である
+- text: 以下のプログラムでXXXとは
+  code: |
+    func f(a: Int, b: Int) XXX {
+      return a < b
+    }
+
+  choice:
+    - "-> Bool"
+    - "=> Bool"
+    - ": Bool"
+    - "Bool"
+- text: 以下のプログラムでXXXとは
+  code: |
+    func f(a: Int, b: Int) -> [Int] {
+      return XXX
+    }
+
+  choice:
+    - "[a]"
+    - "a + b"
+    - "a < b"
+    - "[Int]"
+- text: 以下のエラーがないプログラムでXXXは
+  code: |
+    func f(a: Int, b: Int) -> String {
+      return XXX
+    }
+
+  choice:
+    - "\"String\""
+    - "[a]"
+    - "a + b"
+    - "a < b"
+- text: 以下のエラーがないプログラムでXXXは
+  code: |
+    func f(a: Int) -> String {
+      return XXX
+    }
+
+  choice:
+    - String(a)
+    - String
+    - Int -> String
+    - String[]
+- text: 以下の関数fを使う（呼び出す）ときに指定すべき引数の数は
+  code: |
+    func f(a: Int, b: Int) {
+      ...
+    }
+
+  choice:
+    - 2個
+    - 4個
+    - 何個でもよい
+    - 0個
+- text: 以下の関数fを使うときに指定すべき引数の数は
+  code: |
+    func f(_ b: Int) {
+      ...
+    }
+
+  choice:
+    - 1個
+    - 2個
+    - 3個
+    - 4個
+- text: 以下の関数fを使うときに指定すべき引数の数は
+  code: |
+    func f(first a: Int, second b: Int) {
+      ...
+    }
+
+  choice:
+    - 2個
+    - 4個
+    - 6個
+    - 8個
+- text: 関数呼び出し f(3) における引数の数は
+  choice:
+    - 1個
+    - 0個
+    - 2個
+    - 3個
+- text: "関数呼び出し f(true, true, true) における引数の数は"
+  choice:
+    - 3個
+    - 1個
+    - 2個
+    - 0個
+- text: "関数呼び出し f(from: 1, to: 9) における引数の数は"
+  choice:
+    - 2個
+    - 4個
+    - 9個
+    - 1から9個
+- text: "関数呼び出し f(at: 1) における引数の数は"
+  choice:
+    - 1個
+    - 2個
+    - 3個
+    - 0個
 - text: "x = a.b(c: 3) がエラーでないとする。もっともありえるのは"
   choice:
     - "x = a.b(c: 3 + 1) もエラーにならない"
@@ -258,3 +398,57 @@
     - 型認識
     - 型計算
     - 計算型
+- text: 以下のプログラムでa, b, cの点数の合計を計算するのは
+  code: |
+    struct Person {
+       var name: String
+       var 点数: Int
+       var email: String
+    }
+    var a: Person = Person(XXX)
+    var b: Person = Person(YYY)
+    var c: Person = Person(ZZZ)
+
+  choice:
+    - a.点数 + b.点数 + c.点数
+    - a + b + c
+    - 点数 + 点数 + 点数
+    - Person(XXX) + Person(YYY) + Person(ZZZ)
+- text: 以下のプログラムでXXXの正しい例は
+  code: |
+    struct Person {
+       var name: String
+       var 点数: Int
+       var email: String
+    }
+    var a: Person = XXX
+
+  choice:
+    - "Person(name: \"namae\", 点数: 90, email: \"aaa@cccc.dd\")"
+    - "namae"
+    - "Person(\"namae\", 80, \"aaa@cccc.dd\")"
+    - "struct Person { var name: String var 点数: Int var email: String }"
+- text: "\"3.2\"の型は"
+  choice:
+    - String
+    - Int
+    - Double
+    - "\"Double\""
+- text: "\"10\"の型は"
+  choice:
+    - String
+    - Int
+    - Double
+    - "\"10\""
+- text: 3 * 8 の型は
+  choice:
+    - Int
+    - 24
+    - Double
+    - String
+- text: 3 < 8 の型は
+  choice:
+    - Bool
+    - Int
+    - Int < Int
+    - Bool < Bool

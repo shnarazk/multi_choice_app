@@ -10,6 +10,7 @@ import Foundation
 struct Quiz: Codable, Identifiable {
     var id: Int
     var text: String
+    var code: String?
     var choice: [String]
 }
 
@@ -19,27 +20,15 @@ func loadJson(filename: String) -> [Quiz] {
     guard let path = Bundle.main.path(forResource: filename, ofType: "json") else {
         fatalError("Couldn't load \(filename)")
     }
-    let url = URL(fileURLWithPath: path)
-    return loadJson(url: url)
-//    guard let data = try? Data(contentsOf: url) else {
-//        fatalError("Couldn't parse \(filename)")
-//    }
-//    let decoder = JSONDecoder()
-//    do {
-//         return try decoder.decode([Quiz].self, from: data)
-//    }
-//    catch {
-//        fatalError("Couldn't decode \(filename)")
-//    }
+    return loadJson(url: URL(fileURLWithPath: path))
 }
 
 func loadJson(url: URL) -> [Quiz] {
     guard let data = try? Data(contentsOf: url) else {
         fatalError("Couldn't parse \(url)")
     }
-    let decoder = JSONDecoder()
     do {
-         return try decoder.decode([Quiz].self, from: data)
+         return try JSONDecoder().decode([Quiz].self, from: data)
     }
     catch {
         fatalError("Couldn't decode \(url)")
